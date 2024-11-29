@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mortgage-calculator {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-form,
+.calculator-results {
+    padding: 20px;
+    flex: 1;
+}
+
+.calculator-form {
+    background-color: #f8faff;
+    position: relative;
+}
+
+.calculator-form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.clear-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 0.9rem;
+    color: #0076d6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: #f0f8ff;
+}
+
+.input-group span {
+    font-weight: bold;
+    color: #555;
+    margin-right: 5px;
+}
+
+.input-group input {
+    border: none;
+    flex: 1;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-boxes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.radio-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+}
+
+.radio-box input {
+    display: none;
+}
+
+.radio-box span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.radio-box:hover {
+    border-color: #0076d6;
+}
+
+.radio-box input:checked + span {
+    color: #0076d6;
+    font-weight: bold;
+}
+
+.calculate-btn {
+    background-color: #d1f000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.calculate-btn .icon {
+    font-size: 1.2rem;
+}
+
+.calculator-results {
+    background-color: #001f2d;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.results-placeholder {
+    text-align: center;
+}
+
+.results-placeholder img {
+    width: 160px;
+    margin-bottom: 15px;
+}
+
+.results-placeholder h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.results-placeholder p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 300px;
+    margin: 0 auto;
+}
